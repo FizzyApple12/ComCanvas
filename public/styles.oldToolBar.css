@@ -1,0 +1,72 @@
+input.roomID {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 45px;
+}
+
+input.joinRoom {
+    position: absolute;
+    left: 55px;
+    top: 1px;
+    width: 81px;
+}
+
+input.leaveRoom {
+    position: absolute;
+    left: 138px;
+    top: 1px;
+    width: 92px;
+}
+
+p.colorText1 {
+    position: absolute;
+    left: 231px;
+    top: -13px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 72.7px;
+}
+
+input.color1 {
+    position: absolute;
+    left: 285px;
+    top: 1px;
+    width: 64px;
+}
+
+p.colorText2 {
+    position: absolute;
+    left: 351px;
+    top: -13px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 46.8667px;
+}
+
+input.color2 {
+    position: absolute;
+    left: 380px;
+    top: 1px;
+    width: 64px;
+}
+
+p.weightText {
+    position: absolute;
+    left: 447px;
+    top: -13px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100.6667px;
+}
+
+input.weight {
+    position: absolute;
+    left: 540px;
+    top: 1px;
+    width: 45px;
+}
+
+select.tool {
+    position: absolute;
+    left: 595px;
+    top: 1px;
+    width: 150px;
+}

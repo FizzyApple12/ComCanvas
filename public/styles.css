@@ -1,0 +1,56 @@
+body {
+    overflow: hidden;
+    position: fixed;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0px;
+}
+
+p.roomNum {
+    position: absolute;
+    left: calc(100% - 110px);
+    top: -13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.toolBar {
+    position: absolute;
+    left: 1px;
+    top: -1px;
+    width: 100%;
+}
+
+input.roomID {
+    width: 45px;
+}
+
+p.colorText1 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+}
+
+p.colorText2 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+}
+
+p.weightText {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+}
+
+input.weight {
+    width: 45px;
+}
+
+select.tool {
+    width: 150px;
+}
+
+canvas.p5Canvas {
+    left: 0px;
+    top: 0px;
+}

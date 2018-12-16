@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>ComCanvas</title>
+
+        <link rel="stylesheet" href="./css/styles.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+        <script src="./js/index.js"></script>
+    </head>
+
+    <body>
+        <div id="toolBar" class="toolBar">
+            <input type="text" id="roomID" class="roomID" placeholder="RoomID" maxlength="4">
+            <input type="button" id="joinRoom" class="joinRoom" value="Join Room">
+            <input type="button" id="leaveRoom" class="leaveRoom" value="Leave Room">
+            <p id="colorText1" class="colorText1">Stroke:</p>
+            <input type="color" id="color1" class="color1" value="#000000">
+            <p id="colorText2" class="colorText2">Fill:</p>
+            <input type="color" id="color2" class="color2" value="#000000">
+            <p id="weightText" class="weightText">Line Weight:</p>
+            <input type="number" id="weight" class="weight" value="5" min="1" max="100">
+            <select id="tool" class="tool">
+                <option value="0">Pen</option>
+                <option value="1">Line</option>
+                <option value="2">Rectangle</option>
+                <option value="3">Circle</option>
+                <option value="4">3 Point Triangle</option>
+                <option value="5">Fill Canvas</option>
+            </select>
+        </div>
+
+        <p id="roomNum" class="roomNum">Room 999999</p>
+    </body>
+</html>

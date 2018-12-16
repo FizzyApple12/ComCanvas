@@ -18,6 +18,8 @@ var showINVERR = false;
 var showSUCCESS = false;
 var showFLTRERR = false;
 
+var roomEdits = []
+
 var setup = function() {
     createCanvas(windowWidth, windowHeight);
 
@@ -27,8 +29,16 @@ var setup = function() {
         showFLTRERR = true;
     });
 
-    socket.on('roomChange', function (msg) {
-        applyChanges(msg);
+    socket.on('roomChange', function (msg, roomCGS) {
+        roomEdits = roomCGS;
+
+        if (msg[0] == "pc") {
+            for (var i = 0; i < roomEdits.length; i++) {
+                applyChanges(roomEdits[i]);
+            }
+        } else {
+            applyChanges(msg);
+        }
     });
 
     $("#joinRoom").click(function() {
@@ -238,6 +248,10 @@ var applyChanges = function(data) {
 
 var windowResized = function() {
     resizeCanvas(windowWidth, windowHeight);
+
+    for (var i = 0; i < roomEdits.length; i++) {
+        applyChanges(roomEdits[i]);
+    }
 }
 
 function mouseClicked() {

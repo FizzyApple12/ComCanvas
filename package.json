@@ -1,0 +1,16 @@
+{
+  "name": "comcanvasjs",
+  "version": "1.0.0",
+  "description": "Web based canvas drawing program",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "FizzyApple12",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "socket.io": "^2.2.0"
+  }
+}
